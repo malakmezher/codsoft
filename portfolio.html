@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo22.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hello, I'm <span>Elias</span><br> from Lebanon</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Elias, a dedicated Full Stack Developer with a passion for crafting seamless user experiences and robust back-end solutions. Proficient in front-end technologies like React.js and skilled in server-side languages such as Node.js, I thrive on turning complex ideas into functional, elegant code. A continuous learner, I stay ahead of industry trends to ensure my projects are not just current but forward-looking.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br> Designing web/app interfaces</li>
+                            <li><span>App development</span><br> Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1/2020-5/2020</span><br>Freelancing</li>
+                            <li><span>5/2021-10/2021</span><br>Bootcamp ESA-Coding lab</li>
+                            <li><span>10/2021</span><br>Backend Developer-Internship at zidyia</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>LIU-Management information system</li>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing and developing responsive and user-friendly websites,
+                       Building custom web applications tailored to the client's needs.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Designing and implementing databases(SQL or NoSQL)
+                       Optimizing database performance and ensuring data security 
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-codepen"></i>
+                    <h2>Back-End Development</h2>
+                    <p>Creating server-side applications and APIs using technologies like Node.js, Python (Django/Flask), Ruby on Rails</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="photo2.jpg">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>Your one-stop destination for secure and personalized online shopping. Explore a curated catalog, enjoy exclusive deals</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo3.jpg">
+                    <div class="layer">
+                        <h3>Fitness Tracking App</h3>
+                        <p>app that allows users to track their fitness activities, set goals, and view progress over time.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo4.jpg">
+                    <div class="layer">
+                        <h3>E-learning Platform</h3>
+                        <p>online platform for courses, quizzes, and collaborative learning</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>eliasjk12@gmailcom</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+961 71819019</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+            // Find the corresponding content and add the "active-tab" class
+            var selectedTabContent = document.getElementById(tabname);
+            selectedTabContent.classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
